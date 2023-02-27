@@ -17,7 +17,7 @@ def detect_prime(num):
 
     mod_num = 3
     # iterates through all the odds up to the mid point
-    while mod_num < num / 2:
+    while mod_num <= num / 2:
         # if you have found a factor, the number is not prime
         if num % mod_num == 0:
             print("false", num, mod_num)
