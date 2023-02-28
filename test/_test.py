@@ -1,4 +1,4 @@
-from detect_primes import *
+from python_primes.global_functions.detect_primes import *
 
 def test_prime_one():
     assert detect_prime(1) == False

@@ -7,7 +7,7 @@
 
 from numpy import random
 import matplotlib.pyplot as plt
-from python_primes.detect_primes import *
+from python_primes.global_functions.detect_primes import *
 
 print(detect_prime(1))
 print(detect_prime(2))
