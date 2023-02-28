@@ -7,20 +7,20 @@
 
 from numpy import random
 import matplotlib.pyplot as plt
-from detect_primes import *
+from python_primes.detect_primes import *
 
-detect_prime(1)
-detect_prime(2)
-detect_prime(3)
-detect_prime(4)
-detect_prime(5)
-detect_prime(6)
-detect_prime(7)
-detect_prime(8)
-detect_prime(9)
-detect_prime(10)
-detect_prime(11)
-detect_prime(12)
+print(detect_prime(1))
+print(detect_prime(2))
+print(detect_prime(3))
+print(detect_prime(4))
+print(detect_prime(5))
+print(detect_prime(6))
+print(detect_prime(7))
+print(detect_prime(8))
+print(detect_prime(9))
+print(detect_prime(10))
+print(detect_prime(11))
+print(detect_prime(12))
 
 # plt.plot(xcords, ycords, 'o')
 # plt.axis([0, 6, 0, 20])
