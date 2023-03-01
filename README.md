@@ -4,9 +4,8 @@ This program graphs all the primes in a given range.
 
 ## Install Needed Dependencies
 
-You should only need matplotlib and pytest.<br>
+You should only need matplotlib.<br>
 `python3 -m pip install --user matplotlib`<br>
-`pip install -U pytest`
 
 ## Run the Program
 
