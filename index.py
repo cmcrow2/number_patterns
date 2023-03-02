@@ -4,16 +4,18 @@
 # ycords = [0, 0, 1, 1,  1,  0, -1, -1, -1]
 
 import matplotlib.pyplot as plt
-from global_functions.primes import *
+from global_functions.patterns import *
 from global_functions.detect_primes import *
+from global_functions.fib import *
 
-options = ""
 programs = {
-    "1": "Primes"
+    "1": ["Prime", detect_prime],
+    "2": ["Fibonacci", fib]
 }
 
+options = ""
 for key in programs:
-    options += "\t[" + key + "] : " + programs[key] + "\n"
+    options += "\t[" + key + "] : " + programs[key][0] + "\n"
 
 res = input("Which pattern do you want to see?\n\n" + options + "\nEnter the number that corresponds to\nthe program you wish to run: ")
 
@@ -21,12 +23,11 @@ res = input("Which pattern do you want to see?\n\n" + options + "\nEnter the num
 xcords = []
 ycords = []
 
-n = 25000
+n = 10000
 
-if programs[res] == "Primes":
-    xcords, ycords = primes(n)
+xcords, ycords = plotter(n, programs[res][1])
 
-print("\n\nNumber of " + programs[res] + " in " + str(n) + " numbers: ", len(xcords))
+print("\n\nNumber of " + programs[res][0] + " Numbers in " + str(n) + " numbers: ", len(xcords))
 
 plt.scatter(xcords, ycords, c="black")
 plt.show()

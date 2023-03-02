@@ -1,10 +1,8 @@
-# this function determines where each dot is plotted on the graph
+# this function determines where each prime number is plotted on the graph
 # takes in parameter "n" which dictates how many numbers we're looking at
 #   i.e. "n=100" -> [1, 2, 3, ...100]
 
-from global_functions.detect_primes import *
-
-def primes(n):
+def plotter(n, filter):
     curr_num = 1
     positive = True
     x = 0
@@ -19,7 +17,7 @@ def primes(n):
 
     # iterate through every number from 1 to n
     while curr_num <= n:
-        if detect_prime(curr_num):
+        if filter(curr_num):
             x_cords.append(x)
             y_cords.append(y)
 
