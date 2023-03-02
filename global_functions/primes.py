@@ -4,7 +4,7 @@
 
 from global_functions.detect_primes import *
 
-def order_nums(n):
+def primes(n):
     curr_num = 1
     positive = True
     x = 0
