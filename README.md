@@ -1,6 +1,12 @@
 # python_primes
 
-This program graphs all the numbers in a given range in a specified pattern. 
+This program graphs all the numbers in a given range in a specified pattern.
+
+## Screenshot
+
+![prime_conspiracy_ulam](https://github.com/cmcrow2/number_patterns/assets/22524985/ebfe3764-fe13-4804-a6db-a9a00b4cea4c)
+
+
 
 ## Install Needed Dependencies
 
